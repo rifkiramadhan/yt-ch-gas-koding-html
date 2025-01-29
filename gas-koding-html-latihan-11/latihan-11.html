@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Belajar Picture Pada HTML</title>
+
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <meta name="author" content="Gas Koding" />
+    <meta
+      name="keywords"
+      content="HTML, Belajar Picture Pada HTML, Gas Koding"
+    />
+    <meta
+      name="description"
+      content="Belajar Picture Pada HTML di YouTube Channel Gas Koding."
+    />
+
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <!-- 
+    Catatan:
+    - Setiap bentuk gambar akan menyesuaikan dgn ukuran layarnya
+    -->
+
+    <h1>Belajar tag picture pada HTML</h1>
+
+    <picture>
+      <source media="(max-width: 500px)" srcset="./assets/Icon.png" />
+      <source media="(max-width: 1000px)" srcset="./assets/logo.jpg" />
+      <img
+        src="./assets/foto.jpeg"
+        alt="Foto Owner YouTube Channel Gas Koding"
+        style="width: 250px; height: 250px"
+      />
+    </picture>
+  </body>
+</html>

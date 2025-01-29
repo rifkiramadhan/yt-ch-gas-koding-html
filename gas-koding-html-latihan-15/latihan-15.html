@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Belajar Semantic HTML</title>
+
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Gas Koding" />
+    <meta name="keywords" content="HTML, Semantic HTML, Gas Koding" />
+    <meta
+      name="description"
+      content="Belajar Semantic HTML di YouTube Channel Gas Koding."
+    />
+
+    <link rel="shortcut icon" href="./assets/favicon.ico" />
+  </head>
+
+  <style>
+    * {
+      margin: 10px;
+      padding-top: 10px;
+    }
+
+    html {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: sans-serif;
+      color: black;
+    }
+
+    .container {
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: green;
+      padding-bottom: 5vh;
+      margin-top: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li a {
+      color: black;
+    }
+
+    header {
+      background-color: green;
+      padding-bottom: 20vh;
+    }
+
+    main {
+      background-color: green;
+      display: flex;
+    }
+
+    section {
+      background-color: greenyellow;
+      width: 65%;
+      margin: 3%;
+    }
+
+    article {
+      background-color: yellow;
+      padding-bottom: 10vh;
+      margin: 10%;
+    }
+
+    aside {
+      background-color: yellow;
+      width: 35%;
+      margin: 3%;
+    }
+
+    footer {
+      background-color: green;
+      padding-bottom: 5vh;
+      margin-bottom: 0;
+    }
+  </style>
+
+  <body>
+    <!-- 
+    Semantic HTML:
+    - Adalah element-element pada HTML yang memiliki arti
+    - Contoh tag:
+      - <article>
+      - <aside>
+      - <details>
+      - <figcaption>
+      - <figure>
+      - <footer>
+      - <header>
+      - <main>
+      - <mark>
+      - <nav>
+      - <section>
+      - <summary>
+      - <time>
+    -->
+
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="#">Beranda</a></li>
+          <li><a href="#">Kategori</a></li>
+          <li><a href="#">Layanan</a></li>
+          <li><a href="#">Tentang</a></li>
+          <li><a href="#">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <header>
+        <h1>Ini adalah judul artikel</h1>
+        <p>Ini adalah deskripsi artikel</p>
+      </header>
+
+      <main>
+        <section>
+          <article>
+            <h1>Ini adalah judul artikel 1</h1>
+            <p>Ini adalah deskripsi artikel 1</p>
+          </article>
+          <article>
+            <h1>Ini adalah judul artikel 2</h1>
+            <p>Ini adalah deskripsi artikel 2</p>
+          </article>
+        </section>
+
+        <aside>
+          <h1>Ini adalah judul aside</h1>
+          <p>Ini adalah deskripsi aside</p>
+        </aside>
+      </main>
+
+      <footer>
+        Copyright &copy; <time datetime="2025">2025</time>YouTube Channel Gas
+        Koding.
+      </footer>
+    </div>
+  </body>
+</html>

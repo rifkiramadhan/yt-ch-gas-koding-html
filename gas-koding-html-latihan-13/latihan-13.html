@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Belajar Table Pada HTML</title>
+
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <meta name="author" content="Gas Koding" />
+    <meta name="keywords" content="HTML, Belajar Table Pada HTML, Gas Koding" />
+    <meta
+      name="description"
+      content="Belajar Table Pada HTML di YouTube Channel Gas Koding."
+    />
+
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <h1>Daftar Penjualan Barang</h1>
+
+    <table
+      style="width: 25%; border: 1px solid black; border-collapse: collapse"
+    >
+      <colgroup>
+        <col span="2" style="background-color: yellow" />
+        <col style="background-color: aqua" />
+      </colgroup>
+
+      <thead>
+        <tr>
+          <th colspan="2">Nama Barang</th>
+          <th>Harga Barang</th>
+        </tr>
+      </thead>
+
+      <tbody
+        style="border-top: 1px solid black; border-bottom: 1px solid black"
+      >
+        <tr>
+          <td>Beras</td>
+          <td>Pulen</td>
+          <td>Rp. 15000</td>
+        </tr>
+
+        <tr>
+          <td>Gula</td>
+          <td>Pasir</td>
+          <td>Rp. 15000</td>
+        </tr>
+
+        <tr>
+          <td>Mie</td>
+          <td>Instan</td>
+          <td>Rp. 3000</td>
+        </tr>
+
+        <tr>
+          <td>Minyak</td>
+          <td>Goreng</td>
+          <td>Rp. 7000</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td rowspan="2">Total</td>
+          <td>Total Bayar</td>
+          <td>Rp. 40000</td>
+        </tr>
+
+        <tr>
+          <td>Pembayaran</td>
+          <td>COD (Geratis Ongkir)</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
