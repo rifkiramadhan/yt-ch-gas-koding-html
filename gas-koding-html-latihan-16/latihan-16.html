@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Belajar Input HTML</title>
+
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <meta name="author" content="Gas Koding" />
+    <meta name="keywords" content="HTML, Input HTML, Gas Koding" />
+    <meta
+      name="description"
+      content="Belajar Membuat Input HTML di Youtube Channel Gas Koding"
+    />
+
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <!-- 
+      Form: 
+      - Adalah element HTML untuk membuat formulir di halaman web
+      Input:
+      - Adalah komponen dalam HTML yang berfungsi untuk mengumpulkan data dari pengguna
+    -->
+    <form>
+      <label><u>Button</u>: </label>
+      <input type="button" value="Click me" onclick="msg()"" value="Klick Me" />
+      <br /><br />
+
+      <label><u>Checkbox</u>: </label>
+      <input type="checkbox" id="male" name="male" value="Male" />
+      <label for="male">Male</label>
+      <input type="checkbox" id="female" name="female" value="Female" />
+      <label for="female">Female</label>
+      <br /><br />
+
+      <label for="favcolor"><u>Color</u>: </label>
+      <input type="color" id="favcolor" name="favcolor" value="#ff0000" />
+      <br /><br />
+
+      <label for="birthday"><u>Date</u>: </label>
+      <input type="date" id="birthday" name="birthday" />
+      <br /><br />
+
+      <!-- Elemen input yang digunakan untuk memasukkan tanggal dan waktu ke dalam formulir di situs web -->
+      <label for="mytime"><u>Datetime</u>: </label>
+      <input type="datetime" id="mytime" name="mytime" />
+      <br /><br />
+
+      <label for="birthdaytime"><u>Datetime Local</u>: </label>
+      <input type="datetime-local" id="birthdaytime" name="birthdaytime" />
+      <br /><br />
+
+      <label for="emails"><u>Email</u>: </label>
+      <input type="email" id="emails" name="emails" />
+      <br /><br />
+
+      <label for="myfile"><u>File</u>: </label>
+      <input type="file" id="myfile" name="myfile" />
+      <br /><br />
+
+      <label for="fname"><u>Hidden</u>: </label>
+      <input type="text" id="fname" name="fname" />
+      <input type="hidden" id="custId" name="custId" value="3487" />
+      <br /><br />
+
+      <label><u>Image</u>: </label>
+      <input
+        type="image"
+        src="https://www.w3schools.com/tags/img_submit.gif"
+        alt="Submit"
+        width="20"
+        height="20"
+      />
+      <br /><br />
+
+      <label for="bdaymonth"><u>Month</u>: </label>
+      <input type="month" id="bdaymonth" name="bdaymonth" />
+      <br /><br />
+
+      <label for="quantity"><u>Number</u>: </label>
+      <input type="number" id="quantity" name="quantity" min="1" max="5" />
+      <br /><br />
+
+      <label for="pwd"><u>Password</u>: </label>
+      <input type="password" id="pwd" name="pwd" minlength="8" />
+      <br /><br />
+
+      <p><u>Radio</u>:</p>
+      <input type="radio" id="html" name="fav_language" value="HTML" />
+      <label for="html">HTML</label>
+      <br />
+      <input type="radio" id="css" name="fav_language" value="CSS" />
+      <label for="css">CSS</label>
+      <br />
+      <input
+        type="radio"
+        id="javascript"
+        name="fav_language"
+        value="JavaScript"
+      />
+      <label for="javascript">JavaScript</label>
+      <br /><br />
+
+      <label for="vol"><u>Range</u>: </label>
+      <input type="range" id="vol" name="vol" min="0" max="50" />
+      <br /><br />
+
+      <p><u>Reset</u>:</p>
+      <label for="pin">Enter a PIN:</label>
+      <input type="text" id="pin" name="pin" maxlength="4" />
+      <input type="reset" value="Reset" />
+      <br /><br />
+
+      <label for="gsearch"><u>Search</u>:</label>
+      <input type="search" id="gsearch" name="gsearch" />
+      <br /><br />
+
+      <label><u>Submit</u>:</label>
+      <input type="submit" value="Submit" />
+      <br /><br />
+
+      <label for="tel"><u>Tel</u>:</label>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="123-45-678"
+        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+        required
+      />
+      <br /><br />
+
+      <label for="fname"><u>Text</u>:</label>
+      <input type="text" id="fname" name="fname" />
+      <br /><br />
+
+      <label for="appt"><u>Time</u>:</label>
+      <input type="time" id="appt" name="appt" />
+      <br /><br />
+
+      <label for="link"><u>Link/URL</u>:</label>
+      <input
+        type="url"
+        name="link"
+        id="link"
+        placeholder="https://example.com"
+        pattern="https://.*"
+        size="30"
+      />
+      <br /><br />
+
+      <label for="weeks"><u>Week</u>:</label>
+      <input type="week" id="weeks" name="weeks" />
+      <br /><br />
+    </form>
+
+    <script>
+      function msg() {
+        alert('Hello World!');
+      }
+    </script>
+  </body>
+</html>
